@@ -15,8 +15,8 @@ def convert_tif_to_png(tif_path, png_path):
         )
 
 if __name__ == '__main__':
-    tifs_path = Path("PATH_TO_geoTIFs_FOLDER")
-    pngs_path = Path("SAVE_PATH_TO_RGBS")
+    tifs_path = Path("PATH_TO_FOLDER")
+    pngs_path = Path("SAVE_PATH")
 
     for tif_file in tifs_path.iterdir():
         png_name = tif_file.name.replace('.tif','.png')
